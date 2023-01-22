@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复仇者联盟</title>
+    <style>
+        body{
+            perspective:800px;     
+        }
+        .wrapper{
+            width:200px;
+            height:200px;
+            background-color:aquamarine;
+            margin:100px auto;
+            position:relative;
+            transform-style:preserve-3d;
+            animation:run 5s infinite linear;
+        }
+        
+        .wrapper img{
+            width:100%;
+            vertical-align:top;
+        }
+        .wrapper >div{
+            position:absolute;
+            /*  设置元素透明*/
+            opacity:0.7;
+        }
+        .box1{
+            transform:rotateY(90deg) translateZ(100px);
+        }
+        .box2{
+            transform:rotateY(-90deg) translateZ(100px);
+        }
+        .box3{   
+            transform:rotateX(90deg) translateZ(100px);
+         }
+        
+        .box4{
+            transform:rotateX(-90deg) translateZ(100px);
+        }
+        .box5{
+            transform:translateZ(-100px);
+        }
+        .box6{
+            transform:translateZ(100px);
+        } 
+        /* 设置执行动画 */
+        @keyframes run{
+            from{
+                transform:rotateY(0deg) rotateZ(0) ;
+            }
+            to{
+                transform:rotateY(1turn) rotateZ(1turn);
+                
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper"> 
+            <div class="box1">
+                <img src="imgs/1.jpeg" alt="">  
+            </div>
+            <div class="box2">
+                <img src="imgs/2.jpeg" alt="">          
+            </div>
+            <div class="box3"> 
+                <img src="imgs/3.jpeg" alt=""> 
+                    
+            </div>
+            <div class="box4">
+                <img src="imgs/4.jpeg" alt="">          
+            </div>
+            <div class="box5">
+                <img src="imgs/5.jpg" alt="">          
+            </div>
+            <div class="box6">
+                <img src="imgs/6.jpeg" alt="">          
+            </div>
+    </div>
+</body>
+</html>

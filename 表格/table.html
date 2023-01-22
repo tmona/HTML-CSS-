@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border:1px #000 solid;
+            width:50%;
+            /* border-collapse:collapse; */
+            /* border-spacing:10px; */
+        }
+        td,th{
+            border:1px #000 solid;
+            height:30px;
+            vertical-align:middle;
+            text-align:center;   
+        }
+        tr:nth-child(even){
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <form action="" autocomplete="on">
+        用户名<input type="text"  value="hello" name="username" disabled><br><br>
+        密码<input type="password" name="password" value="ctt12345678" readonly><br><br>
+        <input type="submit"><br><br>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>地址</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>孙悟空</td>
+            <td>18</td>
+            <td>花果山</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>猪八戒</td>
+            <td>28</td>
+            <td>高老庄</td>
+        </tr>
+        <tr>
+            <td rowspan="2">3</td>
+            <td>沙和尚</td>
+            <td>38</td>
+            <td>流沙河</td>
+        </tr>
+        <tr>
+            
+            <td>唐僧</td>
+            <td>16</td>
+            <td>女儿国</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2"></td>
+            <td>西游记</td>
+            <td></td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>

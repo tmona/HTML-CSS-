@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+body{
+    width:1210px;
+}
+.nav-list{
+    height:48px;
+    background-color:#E8E7E3;
+}
+.nav-list a{
+    height:48px;
+    line-height:48px;
+    text-decoration:none;
+    padding:0 41px;
+    float:left;
+    color:#777777;
+    font-size:17px;
+}
+.nav-list a:last-child{
+    padding:0 53px;
+}
+.nav-list a:hover{
+    background-color:#3f3f3f;
+    color:#fff;
+}
