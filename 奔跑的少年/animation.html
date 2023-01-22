@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奔跑的少年</title>
+    <style>
+
+        @keyframes runMan{
+            from{
+                background-position:0 0;
+            }
+            to{
+                background-position:-1472px 0;
+            }
+        }
+        @keyframes sprite{
+            from{
+                background-position:-65px -55px;
+            }
+            to{
+                background-position:-570px -55px;
+            }
+        }
+        .box1{
+
+            width:184px;
+            height:325px;
+            background-image:url(images/man.webp);
+            /* animation-name:runMan;
+            animation-duration:0.5s;    
+            animation-timing-function:steps(8);
+            animation-iteration-count:infinite;
+             */
+            animation:runMan 0.5s steps(8) infinite;
+            margin-bottom:20px;
+        }
+        
+        .box2{
+            width:50px;
+            height:75px;
+            background-image:url(images/man2.webp);
+            background-position:-65px -55px;
+            animation:sprite 800ms steps(5) infinite;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
